@@ -42,6 +42,32 @@ const PROJECTS = [
     ],
     links: [{ label: 'One-pager (PDF)', href: '#' }]
   },
+ // ---------- Shoulder Exoskeleton ----------
+  {
+    id: 'shoulder-exo',
+    title: 'Shoulder Exoskeleton – Rapid Prototype for Overhead Support',
+    summary:
+      'Body-worn assist device to reduce shoulder load during overhead tasks. Focus on lightweight frame, fast support-force modulation, and manufacturable joints.',
+    role: ['Mechanical Design', 'Biomechanics', 'Manufacturing'],
+    year: '2025',
+    tech: ['Aluminum Extrusion', '3D Print', 'CNC', 'Cable-Driven', 'Elastic Elements'],
+    hero: '/assets/projects/exo/hero.jpg',
+    media: [
+      { type: 'image', src: '/assets/projects/exo/hero.jpg', alt: 'Exoskeleton assembled on mannequin', caption: 'Mk1 assembly: shoulder linkage, chest plate, and arm cuff.' },
+      { type: 'image', src: '/assets/projects/exo/linkage-exploded.jpg', alt: 'Exploded view of shoulder linkage', caption: 'Exploded linkage with bushings and shoulder pivot.' },
+      { type: 'image', src: '/assets/projects/exo/harness-detail.jpg', alt: 'Harness detail and quick-adjust straps', caption: 'Quick-adjust harness for fit across users.' },
+      { type: 'image', src: '/assets/projects/exo/cuff-interface.jpg', alt: 'Arm cuff interface', caption: 'Arm cuff with soft interface and anti-slip lining.' },
+      { type: 'video', src: '/assets/projects/exo/range-of-motion.mp4', caption: 'Range-of-motion check and don/doff demo.' }
+    ],
+    outcomes: [
+      'Frame mass under 3.5 kg (target), packable to 17” x 12” x 6”',
+      'Support range tuned for 60°–160° shoulder angles',
+      'Rapid iteration of joints and soft-good interfaces for comfort'
+    ],
+    links: [{ label: 'Design Brief (PDF)', href: '#' }]
+  },
+
+  /* ---------- Closed-loop Biogas Flow Controller (commented out) ----------
   {
     id: 'flow-control',
     title: 'Closed-loop Biogas Flow Controller',
@@ -57,10 +83,11 @@ const PROJECTS = [
     ],
     outcomes: ['Stable control across 0.5–5 LPM', 'Compact printable housing for field use'],
     links: [{ label: 'Github', href: '#' }]
-  }
+  },
+  ----------------------------------------------------------------------- */
 ]
 
-const TAGS = ['All', 'Mechanical Design', 'Electrochemistry', 'Manufacturing', 'Mechatronics', 'Controls']
+const TAGS = ['All', 'Mechanical Design', 'Electrochemistry', 'Manufacturing', 'Mechatronics', 'Controls', 'Biomechanics']
 
 export default function App() {
   const [activeTag, setActiveTag] = useState('All')
@@ -265,7 +292,7 @@ export default function App() {
         </div>
       </section>
 
-      {/* LIGHTBOX (new) */}
+      {/* LIGHTBOX */}
       {viewer.open && (
         <Lightbox
           project={viewer.project}
