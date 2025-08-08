@@ -12,7 +12,7 @@ const PROJECTS = [
     tech: ['SolidWorks', 'CNC', 'Lathe', '3D Print', 'EPDM', 'PP', 'Nickel'],
    hero: '/assets/projects/dan-v1/front-panel-cart.jpg',
 media: [
-  { type: 'image', src: '/assets/projects/dan-v1/gasket-epdm-top.jpg', alt: 'Laser-cut EPDM gaskets, top view', caption: 'EPDM gaskets, post-cut. Note feedthrough holes and locator tab.' },
+  { type: 'image', src: '/assets/projects/dan-v1/gasket-epdm-top.jpg', alt: 'Laser-cut EPDM gaskets, top view', caption: 'EPDM gaskets, post-cut. Note feedthrough holes and Electrode Window.' },
   { type: 'image', src: '/assets/projects/dan-v1/front-panel-cart.jpg', alt: 'Electrolyzer front panel on test cart', caption: 'Front panel plumbing: labeled O2 / KOH ports for quick hookups.' },
   { type: 'image', src: '/assets/projects/dan-v1/stack-side-psu.jpg', alt: 'Stack and bench PSU during outdoor test', caption: 'Outdoor shakedown at ~10 A; checking leaks and voltage stability.' },
   { type: 'image', src: '/assets/projects/dan-v1/manifold-close.jpg', alt: 'Close-up of manifolds and fittings', caption: 'Manifold close-up: push-to-connects and isolation valves.' },
